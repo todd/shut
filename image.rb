@@ -19,8 +19,7 @@ class Image < Struct.new(:handle)
   end
 
   def create_and_upload
-    blob = to_blob
-    bucket.objects.create(key, blob)
+    bucket.objects.create(key, to_blob)
   end
 
   def key
