@@ -1,4 +1,4 @@
-require 'rmagick'
+require 'RMagick'
 require 'aws/s3'
 
 class Image < Struct.new(:handle)
